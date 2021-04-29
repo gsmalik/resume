@@ -30,15 +30,16 @@
 \newcommand{\highlight}[1]{\textcolor{highlight}{\textbf{#1}}}		% highlight text as bold and with the highlight color defined above
 \newcommand{\ec}{\textsuperscript{\textdagger}}								% Equal contribution dagger
 
-
 % define the header and (not) footer %
-\usepackage{fancyhdr}																		  
+\usepackage{fancyhdr}			
+\usepackage{graphicx}
 \fancyhf{}
 \rhead{Curriculum Vit\ae}
 \lhead{Gurshaant Malik}
 \rfoot{Page \thepage}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0pt}
+\newcommand\sbullet{\mathbin{\vcenter{\hbox{\scalebox{0.5}{$\bullet$}}}}}
 
 \begin{document}
 \thispagestyle{empty}					% Turn off header and footer for the first page
@@ -48,8 +49,15 @@
 %%%%%%%%%%%% TITLE %%%%%%%%%%%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace*{-1cm}
-\centering 
-\input{title.tex}
+% \centering
+{\input{title.tex}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% WORK EXPERIENCE %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{0.4cm}
+\section{Work Experience}
+\input{work.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%% EDUCATION %%%%%%%%%%%% 
